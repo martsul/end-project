@@ -1,0 +1,350 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+html {
+  padding: 50px;
+  scroll-behavior: smooth;
+}
+
+.radio-team {
+  position: relative;
+}
+
+.radio {
+  display: none;
+}
+
+.subradio {
+  padding-left: 30px;
+  font-size: 14px;
+  color: #98B6C9;
+}
+
+.subradio::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #F8FCFF;
+  border: 2px solid #CDEDFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.subradio:hover {
+  color: #7A7A7A;
+}
+
+.subradio:hover::before {
+  box-shadow: 0 0 8px 0 #52BFFF40;
+}
+
+.radio:checked+.subradio {
+  color: #313131;
+}
+
+.radio:checked+.subradio::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #52BFFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3.1px;
+}
+
+.radio:disabled+.subradio {
+  color: #D9D9D9;
+}
+
+.radio:disabled+.subradio::before {
+  border: none;
+  box-shadow: none;
+}
+
+.checkbox-team {
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.subcheckbox {
+  color: #98B6C9;
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+.subcheckbox::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #E2EDF3;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.subcheckbox:hover {
+  color: #7A7A7A;
+}
+
+.subcheckbox:hover::before {
+  background: #F3F3F3;
+  border: 2px solid #E8E8E8;
+  box-shadow: 0 0 8px 0 #D0E1EB40;
+}
+
+.checkbox:checked+.subcheckbox {
+  color: #313131;
+}
+
+.checkbox:checked+.subcheckbox::before {
+  background: #52BFFF;
+}
+
+.checkbox:checked+.subcheckbox::after {
+  content: url(../img/checkbox-mark.svg);
+  display: inline-block;
+  position: absolute;
+  top: 1.5px;
+  left: 5.2px;
+}
+
+.checkbox:disabled+.subcheckbox {
+  color: #D9D9D9;
+}
+
+.checkbox:disabled+.subcheckbox::before {
+  background: #F8FCFF;
+  border: 0;
+  box-shadow: none;
+}
+
+.input {
+  background: #F8FCFF;
+  border-radius: 10px;
+  padding: 15px 22px 13px 20px;
+  border: 2px solid #F8FCFF;
+}
+
+.input::placeholder {
+  font-size: 14;
+  color: #98B6C9;
+}
+
+.input:hover {
+  border: 2px solid #E7EFF4;
+}
+
+.input:focus {
+  background: #fff;
+}
+
+.input:focus::placeholder {
+  color: #7A7A7A;
+}
+
+/*
+  .input ACCEPTED {
+
+  }
+
+  .input ERROR {
+
+  }
+*/
+
+.input:disabled:hover {
+  border: 2px solid #F8FCFF;
+}
+
+/* SELECT */
+
+.border-button {
+  height: 48px;
+  position: relative;
+  background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
+  border-radius: 24px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);  
+  border-radius: 24px;
+  background: linear-gradient(213.88deg, #B1E2FF -67.78%, #68C7FF 175.48%);
+}
+
+.button::before {
+  /* content: url("../img/btn-phone.svg"); */
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  padding: 11px;
+  border-radius: 50%;
+  background: linear-gradient(322.12deg, #B1E2FF 1.25%, #68C7FF 89.56%);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.button:hover {
+  background: linear-gradient(213.88deg, #C6EAFF -67.78%, #81D0FF 175.48%);
+  box-shadow: 0px 0px 25px 0px #92D6FF80;
+}
+
+.button:hover::before {
+  background: linear-gradient(322.12deg, #B1E2FF 36.44%, #68C7FF 89.56%);
+}
+
+.button:active {
+  background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
+  box-shadow: 0;
+}
+
+.button:active::before {
+  background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
+  width: 35px;
+  height: 35px;
+  padding: 9.5px;
+  top: 5.5px;
+  left: 5.5px;
+  z-index: 1;
+}
+
+.button:active::after {
+  content: "";
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.button:disabled {
+  color: #D9D9D9;
+  background: #F8FCFF;
+  height: calc(100% + 0.1px);
+  width: calc(100% + 0.3px);
+  top: 0;
+  left: -0.2px;
+  box-shadow: none;
+}
+
+.button:disabled::before {
+  /* content: url("../img/checkbox-mark-grey.svg"); */
+  background: #FFFFFF;
+}
+
+.button:disabled::after {
+  background: #fff;
+}
+
+.border-arrow {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.arrow {
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);
+  background: linear-gradient(213.88deg, #B1E2FF -67.78%, #68C7FF 175.48%);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.arrow::after {
+  content: url("../img/arrow-arrow.svg");
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  padding: 11.2px 0 0 2.2px;
+  background: linear-gradient(390.12deg, #B1E2FF 1.25%, #68C7FF 89.56%);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+}
+
+.arrow:hover {
+  background: linear-gradient(213.88deg, #C6EAFF -67.78%, #81D0FF 175.48%);
+  box-shadow: 0px 0px 25px 0px #92D6FF80;
+}
+
+.border-arrow:active {
+  box-shadow: none;
+}
+
+.arrow:active {
+  background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
+}
+
+.arrow:active::before {
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 41px; 
+  background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.arrow:active::after {
+  background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
+}
+
+.arrow:disabled {
+  background: #D9D9D9;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1.5px solid #EEEFEF;
+  box-shadow: none;
+}
+
+.arrow:disabled::before {
+  background: transparent;
+}
+
+.arrow:disabled::after {
+  background: transparent;
+}
