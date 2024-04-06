@@ -35,7 +35,6 @@ section {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 102px;
   box-shadow: 0px 0px 25px 0px #0000000D;
 }
 
@@ -43,7 +42,6 @@ section {
   display: flex;
   align-items: end;
   gap: 15.4px;
-
 }
 
 .header__contacts-yt {
@@ -105,7 +103,7 @@ section {
 }
 
 .breadcrumbs {
-  padding: 50px calc(50% - 565.5px) 35px;
+  padding: 50px calc(50% - 575.5px) 35px;
   display: flex;
   gap: 47px;
 }
@@ -136,97 +134,11 @@ section {
   color: #7A7A7A;
 }
 
-.service {
-  padding: 0 calc(50% - 565.5px) 168px;
-  background-image: url("../img/service-background.jpg");
-  background-size: 100% 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 101px;
-}
-
-.service::after {
-  content: "";
-  background-image: url("../img/clouds.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 472px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.service__title {
-  font-weight: 700;
-  font-size: 36px;
-  color: #52BFFF;
-}
-
-.service__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 90px 10px;
-}
-
-.service__block {
-  width: 367px;
-  min-height: 180px;
-  padding: 72px 34px 30px;
-  background: #fff;
-  box-shadow: 0px 0px 25px 0px #0000000D;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  text-align: center;
-  position: relative;
-}
-
-.service__block:first-child {
-  padding: 72px 55px 30px;
-}
-
-.service__block:last-child {
-  padding: 72px 52px 30px;
-}
-
-.service__block::after {
-  content: "";
-  border: 2px dashed #ECF6FC;
-  border-radius: 20px;
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-
-.service__img {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.service__text {
-  font-size: 18px;
-  color: #7A7A7A;
-}
-
-.service__strong {
-
-}
-
 .feedback {
-  height: 677px;
   display: flex;
   justify-content: space-between;
-  padding: 118px calc(50% - 565.5px) 0;
+  align-items: start;
+  padding: 118px calc(50% - 575.5px) 27px;
   background: no-repeat url(../img/expert-background.png);
   background-size: 100% 100%;
   position: relative;
@@ -250,10 +162,9 @@ section {
   position: absolute;
   top: 100%;
   left: 0;
-  transform: translateY(-40%);
+  transform: translateY(-43%);
   display: inline-block;
   width: 100%;
-  height: 400px;
 }
 
 .expert {
@@ -302,12 +213,12 @@ section {
   align-items: center;
   gap: 21px;
   position: relative;
-  height: 400px;
+  z-index: 1;
   width: 560px;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 0 40px 0 #77CDFF4D;
-  padding: 42px 60px 0;
+  padding: 42px 60px 41px;
 }
 
 .communication-data::before {
@@ -316,8 +227,8 @@ section {
   position: absolute;
   top: 12px;
   left: 12px;
-  height: 376px;
-  width: 536px;
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
   border: 2px dashed #E2EDF3;
   border-radius: 20px;
 }
@@ -415,8 +326,7 @@ section {
 }
 
 .qustions {
-  height: 630px;
-  padding-top: 61px;
+  padding: 61px 0 141px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -461,7 +371,6 @@ section {
 }
 
 .qustions__container {
-  height: 280px;
   width: 367px;
   display: flex;
   flex-direction: column;
@@ -469,7 +378,7 @@ section {
   border-radius: 20px;
   background: #fff;
   position: relative;
-  padding: 40px 0 0 42px;
+  padding: 40px 55px 52px 42px;
 }
 
 .qustions__container::after {
@@ -478,8 +387,8 @@ section {
   position: absolute;
   top: 12px;
   left: 12px;
-  height: 256px;
-  width: 343px;
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
   border: 2px dashed #E2EDF3;
   border-radius: 20px;
 }
