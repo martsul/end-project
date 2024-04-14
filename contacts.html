@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Static Section</title>
+  <title>Contacts</title>
   <link rel="stylesheet" href="css/fonts.css" type="text/css">
   <link rel="stylesheet" href="css/kit-style.css" type="text/css">
   <link rel="stylesheet" href="css/static-section.css" type="text/css">
+  <link rel="stylesheet" href="css/contacts.css" type="text/css">
 </head>
 
 <body>
@@ -26,13 +27,13 @@
       </a>
     </div>
     <nav class="header__menu">
-      <a href="home.html" class="header__menu-link menu-target">Главная</a>
-      <a href="about-us" class="header__menu-link">О нас</a>
+      <a href="home.html" class="header__menu-link">Главная</a>
+      <a href="about-us.html" class="header__menu-link">О нас</a>
       <a href="service.html" class="header__menu-link">Услуги</a>
       <a href="universities.html" class="header__menu-link">Университеты</a>
       <a href="students.html" class="header__menu-link">Студенты</a>
       <a href="news.html" class="header__menu-link">Новости</a>
-      <a href="contacts.html" class="header__menu-link">Контакты</a>
+      <a href="contacts.html" class="header__menu-link menu-target">Контакты</a>
     </nav>
     <div class="header__application-container border-button">
       <button type="button" class="header__application button">Оставить заявку</button>
@@ -41,67 +42,66 @@
   <main>
     <section class="breadcrumbs">
       <a href="#" class="breadcrumbs__item">Главная</a>
-      <a href="#" class="breadcrumbs__item">Услуги</a>
+      <a href="#" class="breadcrumbs__item">Контакты</a>
     </section>
-    <section class="feedback">
-      <div class="expert">
-        <div class="expert__text">
-          <h5 class="expert__name">Анна</h5>
-          <p class="expert__desriptio">Специалист по обучению в Великобритании</p>
+    <section class="contacts">
+      <div class="contacts__content">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__subtitle">Свяжитесь с нами и мы ответим на все ваши вопросы</p>
+        <div class="contacts__marker-container">
+          <div class="contacts__marker">
+            <p class="contacts__marker-number">1</p>
+            <img src="img/map-marker.svg" alt="marker" class="contacts__marker-img">
+          </div>
+          <div class="contacts__marker">
+            <p class="contacts__marker-number">2</p>
+            <img src="img/map-marker.svg" alt="marker" class="contacts__marker-img">
+          </div>
+          <div class="contacts__marker">
+            <p class="contacts__marker-number">3</p>
+            <img src="img/map-marker.svg" alt="marker" class="contacts__marker-img">
+          </div>
         </div>
-        <img src="img/flag.png" alt="flag" class="expert__flag">
-        <img src="img/woman.png" alt="teacher" class="expert__teacher">
+        <div class="contacts__addresses">
+          <a href="https://www.google.com/maps" class="contacts__text" target="_blank">
+            <p class="contacts__number">1</p>
+            <p class="contacts__city">г. Город</p>
+            <p class="contacts__street">ул. Улица, 24 (Офис 24)</p>
+          </a>
+          <a href="https://www.google.com/maps" class="contacts__text" target="_blank">
+            <p class="contacts__number">2</p>
+            <p class="contacts__city">г. Город</p>
+            <p class="contacts__street">ул. Улица, 24 (Офис 24)</p>
+          </a>
+          <a href="https://www.google.com/maps" class="contacts__text" target="_blank">
+            <p class="contacts__number">3</p>
+            <p class="contacts__city">г. Город</p>
+            <p class="contacts__street">ул. Улица, 24 (Офис 24)</p>
+          </a>
+          <a href="https://www.google.com/maps" class="contacts__text" target="_blank">
+            <p class="contacts__number">4</p>
+            <p class="contacts__city">г. Город</p>
+            <p class="contacts__street">ул. Улица, 24 (Офис 24)</p>
+          </a>
+          <a href="https://www.google.com/maps" class="contacts__text" target="_blank">
+            <p class="contacts__number">5</p>
+            <p class="contacts__city">г. Город</p>
+            <p class="contacts__street">ул. Улица, 24 (Офис 24)</p>
+          </a>
+        </div>
       </div>
-      <form name="user-data" class="communication-data">
-        <div class="communication-data__text">
-          <h3 class="communication-data__title">Связатся с нами</h3>
-          <p class="communication-data__description">
-            Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня</p>
+      <div class="contacts__inf">
+        <div class="contacts__tel">
+          <h4 class="contacts__inf-title">Телефоны</h4>
+          <p class="contacts__inf-item">+998 (99) 878-63-99</p>
+          <p class="contacts__inf-item">+998 (99) 878-63-99</p>
         </div>
-        <div class="communication-data__inputs">
-          <div class="communication-data__name">
-            <input type="text" name="communication-data-name" class="communication-data__field input"
-              placeholder="Ваше имя">
-          </div>
-          <div class="communication-data__number">
-            <input type="tel" name="communication-data-number" class="communication-data__field input"
-              placeholder="+375 (__)__-__-___">
-          </div>
-          <div class="communication-data__comments">
-            <textarea name="communication-data-comments" class="communication-data__field input"
-              placeholder="Дополнительные комментарии"></textarea>
-          </div>
+        <div class="contacts__work">
+          <h4 class="contacts__inf-title">Время работы</h4>
+          <p class="contacts__inf-item">Пн-Пт 9:00 - 18:00</p>
         </div>
-        <div class="communication-data__border-send border-button">
-          <button type="button" class="communication-data__send button">Отправить</button>
-        </div>
-      </form>
-    </section>
-    <section class="qustions">
-      <div class="qustions__text">
-        <h2 class="qustions__title">Остались вопросы?</h2>
-        <p class="qustions__subtitle">Свяжитесь с нами и мы ответим на все ваши вопросы</p>
-      </div>
-      <div class="qustions__container">
-        <div class="qustions__inf">
-          <h4 class="qustions__category">Телефоны</h4>
-          <div class="qustions__group">
-            <p class="qustions__item">+998 (99) 878-63-99
-            </p>
-            <p class="qustions__item">+998 (99) 878-63-99
-            </p>
-          </div>
-        </div>
-        <div class="qustions__inf">
-          <h4 class="qustions__category">Адрес</h4>
-          <p class="qustions__item">г. Город, ул. Улица, 24 (Офис 24)</p>
-        </div>
-        <div class="qustions__inf">
-          <h4 class="qustions__category">Время работы</h4>
-          <p class="qustions__item">Пн-Пт 9:00 - 18:00</p>
-        </div>
-        <div class="qustions__border-button border-button">
-          <button class="qustions__button button">Связаться с нами</button>
+        <div class="contacts__border-button border-button">
+          <button type="button" class="contacts__button button">Связаться с нами</button>
         </div>
       </div>
     </section>
