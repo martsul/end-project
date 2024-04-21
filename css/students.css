@@ -54,7 +54,7 @@
 .students__img {
   position: relative;
   top: 4px;
-} 
+}
 
 .students__text {
   max-width: 552px;
@@ -90,13 +90,4 @@
 .students__description {
   line-height: 22px;
   color: #7A7A7A;
-}
-
-.students__border-more {
-  width: 240px;
-  height: 48px;
-}
-
-.students__more::before {
-  content: url("../img/down-arrow.svg");
 }

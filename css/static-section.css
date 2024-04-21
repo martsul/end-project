@@ -76,30 +76,22 @@ section {
   top: 100%;
 }
 
-.header__application-container {
-  width: 214px;
-  height: 48px;
-  background: #fff;
-  margin-left: 112px;
-}
-
-.header__application {
-  background: #fff;
-  padding-left: 30px;
+.header__application-button {
   color: #52BFFF;
+  background: #fff;
   box-shadow: 0px 0px 25px 0px #52BFFF26;
 }
 
-.header__application::before {
-  content: url("../img/header-btn.svg");
-}
-
-.header__application:hover {
+.header__application-button::before {
   background: #fff;
 }
 
-.header__application:active {
-  box-shadow: 0px 0px 25px 0px #52BFFF26;
+.header__button-icon {
+  background: linear-gradient(213.88deg, #B1E2FF -67.78%, #68C7FF 175.48%);
+}
+
+.header__application-button:enabled:hover {
+  background: #faf9f9;
 }
 
 .breadcrumbs {
@@ -300,27 +292,10 @@ section {
   resize: none;
 }
 
-.communication-data__border-send {
+.feedback__button {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 48px;
-  width: 240px;
-}
-
-.communication-data__send {
-  padding-left: 15px;
-  text-align: center;
-}
-
-.communication-data__send::before {
-  content: url(../img/communication-data-send.svg);
-  padding-left: 13px;
-}
-
-.communication-data__send:active:before {
-  padding-left: 11.5px;
+  transform: translateY(-50%);
 }
 
 .qustions {
@@ -427,22 +402,12 @@ section {
   color: #7A7A7A;
 }
 
-.qustions__border-button {
-  height: 48px;
-  width: 240px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
 .qustions__button {
-  padding-left: 25px;
-}
-
-.qustions__button::before {
-  content: url("../img/btn-phone.svg");
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 62px;
+  transform: translateY(-50%);
 }
 
 .footer {

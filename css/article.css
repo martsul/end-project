@@ -136,3 +136,17 @@
   bottom: 8px;
   left: -2px;
 }
+
+.same__border-left {
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.same__border-rigth {
+  position: absolute;
+  right: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+}

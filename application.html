@@ -2,11 +2,11 @@
 <html lang="zxx">
 	<head>
 		<meta charset="UTF-8" />
-		<title>about-us</title>
+		<title>Application</title>
 		<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 		<link rel="stylesheet" href="css/kit-style.css" type="text/css" />
 		<link rel="stylesheet" href="css/static-section.css" type="text/css" />
-		<link rel="stylesheet" href="css/about-us.css" type="text/css" />
+		<link rel="stylesheet" href="css/application.css" type="text/css" />
 	</head>
 
 	<body>
@@ -51,7 +51,7 @@
 			</div>
 			<nav class="header__menu">
 				<a href="home.html" class="header__menu-link">Главная</a>
-				<a href="about-us" class="header__menu-link menu-target">О нас</a>
+				<a href="about-us" class="header__menu-link">О нас</a>
 				<a href="service.html" class="header__menu-link">Услуги</a>
 				<a href="universities.html" class="header__menu-link">Университеты</a>
 				<a href="students.html" class="header__menu-link">Студенты</a>
@@ -75,111 +75,178 @@
 		<main>
 			<section class="breadcrumbs">
 				<a href="#" class="breadcrumbs__item">Главная</a>
-				<a href="#" class="breadcrumbs__item">О нас</a>
+				<a href="#" class="breadcrumbs__item">Заявка на консультацию</a>
 			</section>
-			<section class="about">
-				<h2 class="about__title">О нас</h2>
-				<div class="about__discription">
-					<div class="about__text">
-						<p class="about__paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore eu fugiat
-							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-							sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-						<p class="about__paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore eu fugiat
-							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-							sunt in culpa qui officia deserunt mollit anim id est
-							laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-							reprehenderit in voluptate velit esse cillum dolore.
-						</p>
-						<p class="about__paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut.
-						</p>
-					</div>
-					<div class="about__img-container">
-						<img src="img/company-team.png" alt="team" class="about__img" />
-						<img
-							src="img/cloud-border.png"
-							alt="border"
-							class="about__img-border"
-						/>
-					</div>
+			<section class="application">
+				<div class="application__header">
+					<a href="home.html" class="application__back">Назад</a>
+					<h2 class="application__title">Заявка на консультацию</h2>
 				</div>
-			</section>
-			<section class="service">
-				<h2 class="service__title">Услуги</h2>
-				<div class="service__container">
-					<div class="service__block">
-						<img src="img/service-hat.png" alt="hat" class="service__img" />
-						<p class="service__text">Поступление в зарубежные ВУЗы</p>
-					</div>
-					<div class="service__block">
-						<img
-							src="img/service-documents.png"
-							alt="documents"
-							class="service__img"
+				<form class="application__form">
+					<div class="application__fio application__field">
+						<h5 class="application__chapter application__chapter-fio">ФИО</h5>
+						<input
+							type="text"
+							placeholder="Имя"
+							class="application__names input"
 						/>
-						<p class="service__text">
-							<strong class="service__strong">Оформление</strong> всех
-							документов для поступления
-						</p>
-					</div>
-					<div class="service__block">
-						<img
-							src="img/service-passport.png"
-							alt="passport"
-							class="service__img"
+						<input
+							type="text"
+							placeholder="Фамилия"
+							class="application__names input"
 						/>
-						<p class="service__text">
-							<strong class="service__strong">Помощь</strong> в оформлении и
-							получении визы
-						</p>
 					</div>
-					<div class="service__block">
-						<img
-							src="img/service-tickets.png"
-							alt="tickets"
-							class="service__img"
+					<div class="application__birthday application__field">
+						<h5 class="application__chapter application__chapter-birtday">
+							Дата рождения
+						</h5>
+						<input
+							type="number"
+							placeholder="День"
+							class="application__date input"
 						/>
-						<p class="service__text">
-							Организация переезда и размещения студента
-						</p>
-					</div>
-					<div class="service__block">
-						<img src="img/service-flags.png" alt="flags" class="service__img" />
-						<p class="service__text">
-							Организация языковых
-							<strong class="service__strong">курсов</strong> и туристических
-							<strong class="service__strong">поездок</strong>
-						</p>
-					</div>
-					<div class="service__block">
-						<img
-							src="img/service-translate.png"
-							alt="translate"
-							class="service__img"
+						<input
+							type="number"
+							placeholder="Месяц"
+							class="application__date input"
 						/>
-						<p class="service__text">
-							<strong class="service__strong">Оформление и перевод</strong>
-							документов на иностранный язык
-						</p>
+						<input
+							type="number"
+							placeholder="Год"
+							class="application__date input"
+						/>
 					</div>
-				</div>
+					<div class="application__contacts application__field">
+						<h5 class="application__chapter application__chapter-contacts">
+							Контактные данные
+						</h5>
+						<input
+							type="tel"
+							placeholder="+998 (___) __ - __ - __"
+							class="application__inf input"
+						/>
+						<input
+							type="email"
+							placeholder="E-mail"
+							class="application__inf input"
+						/>
+						<input
+							type="text"
+							placeholder="Город"
+							class="application__inf input"
+						/>
+					</div>
+					<div class="application__english application__field">
+						<h5 class="application__chapter application__chapter-english">
+							Уровень английского
+						</h5>
+						<div class="radio-container">
+							<label class="application__level">
+								<input
+									type="radio"
+									class="application__level-radio radio"
+									name="english"
+								/>
+								<span class="application__radio-span subradio"
+									>Начинающий (А1 - А2)</span
+								>
+							</label>
+							<label class="application__level">
+								<input
+									type="radio"
+									class="application__level-radio radio"
+									name="english"
+								/>
+								<span class="application__radio-span subradio"
+									>Средний (B1 - B2)</span
+								>
+							</label>
+							<label class="application__level">
+								<input
+									type="radio"
+									class="application__level-radio radio"
+									name="english"
+								/>
+								<span class="application__radio-span subradio"
+									>Продвинутый (C1 - C2)</span
+								>
+							</label>
+						</div>
+					</div>
+					<div class="application__programs application__field">
+						<h5 class="application__chapter application__chapter-programs">
+							Предпочтительная программа
+						</h5>
+						<div class="radio-container">
+							<label class="application__study">
+								<input
+									type="radio"
+									class="application__study-radio radio"
+									name="programs"
+								/>
+								<span class="application__study-span subradio">Бакалавр</span>
+							</label>
+							<label class="application__study">
+								<input
+									type="radio"
+									class="application__study-radio radio"
+									name="programs"
+								/>
+								<span class="application__study-span subradio">Foundation</span>
+							</label>
+							<label class="application__study">
+								<input
+									type="radio"
+									class="application__study-radio radio"
+									name="programs"
+								/>
+								<span class="application__study-span subradio">Магистр</span>
+							</label>
+						</div>
+					</div>
+					<div class="application__start application__field">
+						<h5 class="application__chapter application__chapter-start">
+							Предпочтительная дата начала
+						</h5>
+						<div class="application__day">
+							<input
+								type="number"
+								placeholder="День"
+								class="application__date input"
+							/>
+							<input
+								type="number"
+								placeholder="Месяц"
+								class="application__date input"
+							/>
+							<input
+								type="number"
+								placeholder="Год"
+								class="application__date input"
+							/>
+						</div>
+						<div class="application__other-icon">
+							<textarea
+							name="other"
+							placeholder="Дополнительные комментарии"
+							class="application__other input"
+						></textarea>
+						</div>
+					</div>
+					<button type="button" class="application__button button">
+						<span>Отправить</span>
+						<svg
+							viewBox="0 0 16 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="button-icon"
+						>
+							<path
+								d="M0.00760714 0.000488281L0 5.33381L6.85714 6.85763L0 8.38145L0.00760714 13.7148L16 6.85763L0.00760714 0.000488281Z"
+							/>
+						</svg>
+					</button>
+				</form>
 			</section>
 			<section class="feedback">
 				<div class="expert">

@@ -195,16 +195,3 @@
 .contacts__inf-item {
   color: #7A7A7A;
 }
-
-.contacts__border-button {
-  height: 48px;
-  width: 240px;
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.contacts__button::before {
-  content: url("../img/btn-phone.svg");
-}
