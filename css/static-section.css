@@ -28,14 +28,15 @@ section {
 }
 
 .container {
-  padding: 0 calc(50% - 568px);
+  padding: 0 calc(50% - 575.5px);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px calc(50% - 568px) 29px;
+  padding-top: 18px;
+  padding-bottom: 29px;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -99,7 +100,8 @@ section {
 }
 
 .breadcrumbs {
-  padding: 50px calc(50% - 575.5px) 35px;
+  padding-top: 50px;
+  padding-bottom: 35px;
   display: flex;
   gap: 23px;
 }
@@ -132,7 +134,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 118px calc(50% - 575.5px) 27px;
+  padding-top: 118px;
+  padding-bottom: 27px;
   background: no-repeat url(../img/expert-background.png);
   background-size: 100% 100%;
   position: relative;
@@ -298,8 +301,7 @@ section {
 
 .feedback__button {
   position: absolute;
-  top: 100%;
-  transform: translateY(-50%);
+  top: 95%;
 }
 
 .qustions {
@@ -358,10 +360,11 @@ section {
   padding: 40px 55px 52px 42px;
 }
 
-.qustions__container::after {
+.qustions__container::before {
   content: "";
   display: inline-block;
   position: absolute;
+  z-index: 0;
   top: 12px;
   left: 12px;
   height: calc(100% - 24px);
@@ -408,14 +411,13 @@ section {
 
 .qustions__button {
   position: absolute;
-  z-index: 1;
-  top: 100%;
+  top: 92%;
   left: 62px;
-  transform: translateY(-50%);
 }
 
 .footer {
-  padding: 54px calc(50% - 570px) 56px;
+  padding-top: 54px;
+  padding-bottom: 56px;
   display: flex;
   flex-direction: column;
   gap: 19px;

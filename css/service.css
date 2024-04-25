@@ -1,5 +1,5 @@
 .service {
-  padding: 0 calc(50% - 575.5px) 168px;
+  padding-bottom: 168px;
   background-image: url("../img/service-background.jpg");
   background-size: 100% 100%;
   position: relative;

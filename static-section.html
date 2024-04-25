@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<header class="header">
+		<header class="header container">
 			<a href="#" class="header__logo-link" target="_blank">
 				<img src="img/logo.png" alt="logo" class="header__logo-img" />
 			</a>
@@ -72,11 +72,11 @@
 			</button>
 		</header>
 		<main>
-			<section class="breadcrumbs">
+			<section class="breadcrumbs container">
 				<a href="#" class="breadcrumbs__item">Главная</a>
 				<a href="#" class="breadcrumbs__item">Услуги</a>
 			</section>
-			<section class="feedback">
+			<section class="feedback container">
 				<div class="expert">
 					<div class="expert__text">
 						<h5 class="expert__name">Анна</h5>
@@ -172,8 +172,31 @@
 						</svg>
           </button>
 			</section>
+			<section class="pop-up">
+				<form class="pop-up__form">
+					<h4 class="pop-up__title">Связатся с нами</h4>
+					<p class="pop-up__subtitle">
+						Оставьте свои данные и наш специалист обязательно свяжемся с Вами в течение дня</p>
+					<input type="text" class="pop-up__name input" name="name" placeholder="Ваше имя">
+					<input type="text" class="pop-up__tel input" name="tel" placeholder="+998 (___) __ - __ - __">
+					<textarea class="pop-up__other input" name="other" placeholder="Дополнительные комментарии	"></textarea>
+					<button class="pop-up__send button" type="button">
+						<span>Отправить</span>
+						<svg
+							viewBox="0 0 16 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="button-icon"
+						>
+							<path
+								d="M0.00760714 0.000488281L0 5.33381L6.85714 6.85763L0 8.38145L0.00760714 13.7148L16 6.85763L0.00760714 0.000488281Z"
+							/>
+						</svg>
+					</button>
+				</form>
+			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer container">
 			<div class="footer__links-container">
 				<div class="footer__logo-container">
 					<img src="img/eagle-logo.png" alt="logo" class="footer__eagle-logo" />
