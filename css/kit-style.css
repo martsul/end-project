@@ -81,7 +81,7 @@
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2px;
 }
 
 .subcheckbox:hover {
@@ -106,7 +106,7 @@
   content: url(../img/checkbox-mark.svg);
   display: inline-block;
   position: absolute;
-  top: 1.5px;
+  top: -2px;
   left: 5.2px;
 }
 
