@@ -1,0 +1,173 @@
+.application {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 150px;
+}
+
+.application__header {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 227px;
+}
+
+.application__back {
+  padding-left: 35px;
+  font-size: 18px;
+  color: #7A7A7A;
+  position: relative;
+}
+
+.application__back::before {
+  content: url("../img/blue-arr.svg");
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.application__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #52BFFF;
+}
+
+.application__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.application__field {
+  display: flex;
+  position: relative;
+  padding-top: 28px;
+}
+
+.application__fio {
+  gap: 30px;
+}
+
+.application__chapter {
+  position: absolute;
+  top: 0;
+  left: 21px;
+  padding-left: 28px;
+  color: #7A7A7A;
+  font-weight: 500;
+}
+
+.application__chapter::before {
+  position: absolute;
+  left: 0;
+}
+
+.application__chapter-fio::before {
+  content: url("../img/grey-person.svg");
+}
+
+.application__names {
+  width: 440px;
+}
+
+.application__birthday {
+  gap: 10px;
+}
+
+.application__chapter-birtday::before {
+  content: url("../img/grey-present.svg");
+}
+
+.application__date {
+  width: 140px;
+}
+
+.application__contacts {
+  gap: 8px 30px;
+  flex-wrap: wrap-reverse;
+}
+
+.application__chapter-contacts::before {
+  content: url("../img/grey-position.svg");
+}
+
+.application__inf {
+  width: 440px;
+}
+
+.application__english {
+  gap: 15px;
+}
+
+.application__chapter-english::before {
+  content: url("../img/grey-grafic.svg");
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.application__level {
+  position: relative;
+}
+
+.application__study {
+  position: relative;
+}
+
+.application__programs {
+  gap: 15px;
+}
+
+.application__chapter-programs::before {
+  content: url("../img/study-hat.svg");
+  position: absolute;
+}
+
+.application__start {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.application__chapter-start::before {
+  content: url("../img/calendar.svg");
+}
+
+.application__day {
+  display: flex;
+  gap: 10px;
+}
+
+.application__date {
+  width: 140px;
+}
+
+.application__other {
+  width: 440px;
+}
+
+.application__other-icon {
+  position: relative;
+}
+
+.application__other-icon::before {
+  content: url("../img/communication-data-message.svg");
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.application__other {
+  padding-left: 49px;
+}
+
+.application__button {
+  position: relative;
+  top: 30px;
+  left: 340px;
+}
