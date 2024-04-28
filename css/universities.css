@@ -1,19 +1,4 @@
-.universities {
-	display: grid;
-	grid-template-columns: 275px 1fr;
-	background: #fff;
-	padding-bottom: 150px;
-}
 
-.universities__title {
-	grid-column: 1 / 3;
-	text-align: center;
-	font-weight: 700;
-	font-size: 36px;
-	color: #52BFFF;
-	padding-bottom: 40.5px;
-	border-bottom: 1px solid #E2EDF380
-}
 
 .universities__filters {
 	display: flex;
