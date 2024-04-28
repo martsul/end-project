@@ -81,7 +81,7 @@
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2px;
 }
 
 .subcheckbox:hover {
@@ -106,7 +106,7 @@
   content: url(../img/checkbox-mark.svg);
   display: inline-block;
   position: absolute;
-  top: 1.5px;
+  top: -0.7px;
   left: 5.2px;
 }
 
@@ -182,18 +182,18 @@
   cursor: pointer;
 }
 
-  .button:before {
-    content: "";
-    display: inline-block;
-    top: -1.5px;
-    left: -1.5px;
-    position: absolute;
-    z-index: -1;
-    height: calc(100% + 3px);
-    width: calc(100% + 3px);
-    background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
-    border-radius: 25px;
-  }
+.button:before {
+  content: "";
+  display: inline-block;
+  top: -1.5px;
+  left: -1.5px;
+  position: absolute;
+  z-index: -1;
+  height: calc(100% + 3px);
+  width: calc(100% + 3px);
+  background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
+  border-radius: 25px;
+}
 
 .button-icon {
   box-sizing: border-box;
@@ -299,23 +299,23 @@
   border-radius: 50%;
 }
 
-.arrow:enabled :hover {
+.arrow:enabled:hover {
   box-shadow: 0px 0px 25px 0px #92D6FF80;
 }
 
-.arrow:enabled :hover {
+.arrow:enabled:hover {
   background: linear-gradient(213.88deg, #C6EAFF -67.78%, #81D0FF 175.48%);
 }
 
-.arrow:enabled :active {
+.arrow:enabled:active {
   box-shadow: none;
 }
 
-.arrow:enabled :active::before {
+.arrow:enabled:active::before {
   background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
 }
 
-.arrow:enabled :active::after {
+.arrow:enabled:active::after {
   content: "";
   display: inline-block;
   width: 38px;
@@ -328,7 +328,7 @@
   border-radius: 50%;
 }
 
-.arrow:enabled :active .arrow-icon {
+.arrow:enabled:active .arrow-icon {
   background: linear-gradient(213.88deg, #86D2FF -67.78%, #47BBFF 175.48%);
   z-index: 1;
 }
@@ -428,3 +428,15 @@
 } */
 
 /* SEARCH */
+
+/* ANIMATIONS CURTAINS*/
+
+.curtain-all {
+  animation: curtain-animation 0.4s linear forwards;
+}
+
+@keyframes curtain-animation {
+  100% {
+    max-height: 100%;
+  }
+}
