@@ -1,0 +1,366 @@
+.header {
+  box-shadow: none;
+  position: absolute;
+  background: transparent;
+}
+
+.preview {
+  padding-top: 202px;
+  background-image: url("../img/preview-background.jpg");
+  background-size: 100% 100%;
+  min-height: 900px;
+  position: relative;
+}
+
+.preview__title {
+  font-weight: 700;
+  font-size: 44px;
+  color: #313131;
+  max-width: 721px;
+  margin-bottom: 25px;
+}
+
+.preview__title-blue {
+  color: #52BFFF;
+}
+
+.preview__subtitle {
+  font-size: 18px;
+  color: #7a7a7a;
+  max-width: 677px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.preview__subtitle::before {
+  content: url("../img/circl-arr.svg");
+  position: absolute;
+  left: -55px;
+  bottom: -80px;
+}
+
+.preview__contacts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.preview__location {
+  color: #7A7A7A;
+  font-size: 15px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.preview__location::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/map-location-blue.svg");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+}
+
+.preview__location-strong {
+  color: #313131;
+  font-weight: 700;
+}
+
+.preview__work {
+  position: relative;
+  color: #313131;
+  padding-left: 26px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.preview__work::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/clock-blue.svg");
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.home-other {
+  background-image: url(../img/home-other-background.jpg);
+  background-size: 100% 100%;
+  padding-top: 97px;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  position: relative;
+  overflow: visible;
+}
+
+.why::before {
+  content: url("../img/why-tree.png");
+  position: absolute;
+  left: 0;
+  top: -230px;
+}
+
+.why__subtitle {
+  max-width: 437px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #7A7A7A;
+  margin-bottom: 5px;
+}
+
+.why__subtitle-strong {
+  font-weight: 500;
+}
+
+.why__title {
+  color: #52BFFF;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 105px;
+}
+
+.why__card-containre {
+  display: grid;
+  grid-template-columns: repeat(3, 367px);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.why__card {
+  box-shadow: 0px 0px 25px 0px #0000000D;
+  position: relative;
+  border-radius: 20px;
+  padding: 72px 48px 30px;
+}
+
+.why__card-img {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.why__card-discription {
+  font-size: 18px;
+  color: #7A7A7A;
+  text-align: center;
+}
+
+.why__card-discription-strong {
+  font-weight: 500;
+}
+
+.universities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.universities__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.universities__header-text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 423px;
+}
+
+.universities__title {
+  text-align: center;
+  color: #52BFFF;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.universities__subtitle {
+  color: #7A7A7A;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.universities__subtitle-strong {
+  font-weight: 500;
+}
+
+.universities__link {
+  padding-right: 38px;
+  font-size: 18px;
+  color: #7A7A7A;
+  position: relative;
+}
+
+.universities__link::before {
+  content: url("../img/blue-arr.svg");
+  position: absolute;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.universities__card-container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+#left-universities-button {
+  transform: translate(-50%, -50%) rotate(180deg);
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+.universities__card {
+  padding: 12px 12px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px 0px #0000000D;
+}
+
+.universities__card-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.universities__card-city {
+  font-size: 18px;
+  color: #7A7A7A;
+}
+
+.universities__card-num {
+  color: #D9D9D9;
+}
+
+#rigth-universities-button {
+  position: absolute;
+  left: 100%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/review-background.png");
+  background-size: 100% 100%;
+  padding-top: 150px;
+  padding-bottom: 187px;
+  position: relative;
+}
+
+.reviews::before {
+  content: "";
+  background-image: url("../img/clouds.png");
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline-block;
+  top: 100%;
+  left: 0;
+  transform: translateY(-60%);
+  width: 150%;
+  height: 400px;
+}
+
+.reviews::after {
+  content: url("../img/home-review-tree.png");
+  position: absolute;
+  right: 0;
+  bottom: -105px;
+}
+
+.reviews__title {
+  color: #52BFFF;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 146px;
+}
+
+.reviews__card-container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.reviews__card {
+  padding: 121px 27px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 25px 0px #0000000D;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.reviews__card::before {
+  content: "";
+  display: inline-block;
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border: 2px dashed #ECF6FC;
+  border-radius: 20px;
+}
+
+.reviews__card-img-container {
+  position: absolute;
+  padding: 22px 34px 0 33px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 212px;
+  height: 212px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__card-img {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+}
+
+.reviews__card:nth-child(even) .reviews__card-img-container {
+  background: #E52732;
+}
+
+.reviews__card:nth-child(odd) .reviews__card-img-container {
+  background: linear-gradient(213.88deg, #B1E2FF -67.78%, #68C7FF 175.48%);
+}
+
+.reviews__card-description {
+  width: 313px;
+}
+
+.reviews__card-name {
+  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.reviews__card-review {
+  color: #7A7A7A;
+}
