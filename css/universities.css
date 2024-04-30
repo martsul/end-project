@@ -1,6 +1,6 @@
 .universities {
 	display: grid;
-	grid-template-columns: 275px 1fr;
+	grid-template-columns: 270px 1fr;
 	background: #fff;
 	padding-bottom: 150px;
 }
@@ -100,6 +100,7 @@
 }
 
 .universities__search {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -143,6 +144,7 @@
 	gap: 20px;
 	max-height: 880px;
 	overflow: hidden;
+	width: 100%;
 }
 
 .universities__card {
@@ -150,6 +152,7 @@
 	display: flex;
 	box-shadow: 0px 0px 25px 0px #0000000D;
 	border-radius: 20px;
+	width: 100%;
 }
 
 .universities__card-img-container {
@@ -230,7 +233,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2px 28px;
-	padding-left: 26px;
+	padding-left: 23px;
 	position: relative;
 }
 

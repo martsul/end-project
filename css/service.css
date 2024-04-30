@@ -36,7 +36,8 @@
 }
 
 .service__block {
-  width: 367px;
+  max-width: 367px;
+  width: 100%;
   min-height: 180px;
   padding: 72px 34px 30px;
   background: #fff;

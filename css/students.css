@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 150px;
   background: #fff;
+  padding-bottom: 228px;
 }
 
 .students__title {
@@ -18,7 +18,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-height: 460px;
+  max-height: 710px;
+  overflow: hidden;
 }
 
 .students__card {

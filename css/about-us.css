@@ -20,7 +20,7 @@
 }
 
 .about__text {
-  width: 560px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -87,7 +87,7 @@
 }
 
 .service__block {
-  width: 367px;
+  max-width: 367px;
   min-height: 180px;
   padding: 72px 34px 30px;
   background: #fff;

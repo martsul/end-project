@@ -69,7 +69,8 @@
 }
 
 .application__names {
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
 }
 
 .application__birthday {
@@ -81,7 +82,8 @@
 }
 
 .application__date {
-  width: 140px;
+  max-width: 140px;
+  width: 100%;
 }
 
 .application__contacts {
@@ -94,7 +96,8 @@
 }
 
 .application__inf {
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
 }
 
 .application__english {
@@ -144,11 +147,14 @@
 }
 
 .application__date {
-  width: 140px;
+  max-width: 140px;
+  width: 100%;
 }
 
 .application__other {
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
+  height: 100px;
 }
 
 .application__other-icon {

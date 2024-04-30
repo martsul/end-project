@@ -15,16 +15,11 @@
 }
 
 .news__container {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
-  max-height: 640px; */
-  display: flex;
-	flex-direction: column;
-	gap: 20px;
-	max-height: 880px;
-	overflow: hidden;
+  max-height: 640px;
 }
 
 .news__card {
@@ -75,13 +70,4 @@
 .news__time-target {
   font-style: normal;
   font-weight: 500;
-}
-
-.news__border-more {
-  height: 48px;
-  width: 240px;
-}
-
-.news__more::before {
-  content: url("../img/down-arrow.svg");
 }
