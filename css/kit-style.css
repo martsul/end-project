@@ -120,12 +120,6 @@
   box-shadow: none;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
-
 .input {
   background: #F8FCFF;
   border-radius: 10px;
