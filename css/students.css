@@ -36,6 +36,7 @@
   background: #52BFFF;
   border-radius: 20px;
   position: relative;
+  height: 191px;
 }
 
 .students__img-background::before {
@@ -93,4 +94,63 @@
 .students__description {
   line-height: 22px;
   color: #7A7A7A;
+}
+
+@media (max-width: 850px) {
+  .students__container {
+    align-items: center;
+    max-height: 850px;
+  }
+
+  .students__card {
+    width: calc(100% - 15px);
+    flex-direction: column;
+    padding-bottom: 29px;
+    position: relative;
+  }
+
+  .students__img {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .students__university {
+    position: absolute;
+    bottom: 9px;
+  }
+}
+
+@media (max-width: 736px) {
+  .students__container {
+    max-height: 910px;
+  }
+}
+
+@media (max-width: 520px) {
+  .students__container {
+    max-height: 985px;
+  }
+}
+
+@media (max-width: 440px) {
+  .students__title {
+    font-size: 24px;
+  }
+
+  .students__container {
+    max-height: 1250px;
+  }
+
+  .students__name {
+    font-size: 14px;
+  }
+
+  .students__university {
+    font-size: 10px;
+  }
+
+  .students__description {
+    font-size: 10px;
+    line-height: 1.4;
+  }
 }

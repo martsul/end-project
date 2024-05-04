@@ -1,18 +1,18 @@
 // // POP-UP //
 
-// document
-// 	.querySelector(".header__application-button")
-// 	.addEventListener("click", (event) => {
-// 		document.body.setAttribute("class", "body__pop-up-on");
-// 		document
-// 			.querySelector(".pop-up")
-// 			.setAttribute("class", "pop-up pop-up__turn-on");
-// 	});
+document
+	.querySelector(".header__application-button")
+	.addEventListener("click", (event) => {
+		document.body.setAttribute("class", "body__pop-up-on");
+		document
+			.querySelector(".pop-up")
+			.setAttribute("class", "pop-up pop-up__turn-on");
+	});
 
-// document.querySelector(".pop-up__close").addEventListener("click", (event) => {
-// 	document.querySelector(".pop-up").setAttribute("class", "pop-up");
-// 	document.body.removeAttribute("class");
-// });
+document.querySelector(".pop-up__close").addEventListener("click", (event) => {
+	document.querySelector(".pop-up").setAttribute("class", "pop-up");
+	document.body.removeAttribute("class");
+});
 
 // // POP-UP //
 
@@ -97,28 +97,88 @@
 // //   );
 // // });
 
-let input = document.querySelector(".input")
-let onebtn = document.querySelector(".one")
-let twobtn = document.querySelector(".two")
-let errorText = '<div class="error-subtitle"><img src="img/error-icon.svg" alt="error"><p class="error-text">Reason of the error</p></div>'
+// ERROR //
 
+let errorText =
+  '<div class="error-subtitle"><img src="img/error-icon.svg" alt="error"><p class="error-text">Reason of the error</p></div>';
+let forms = document.querySelectorAll("form");
 
-console.log(twobtn);
+let errorСonditions = (condition, currentEvent, element) => {
+  if (!condition) {
+    currentEvent.preventDefault();
+    if (!element.querySelector(".error-subtitle")) {
+      element.querySelector("input").classList.add("input-error");
+      element.querySelector("input").insertAdjacentHTML("afterend", errorText);
+    }
+  } else if (condition && element.querySelector(".error-subtitle")) {
+    element.querySelector("input").classList.remove("input-error");
+    element.querySelector(".error-subtitle").remove();
+  }
+};
 
-onebtn.addEventListener("click", event => {
-	console.log("g");
-	
-	if (!input.nextElementSiblingling) {
-		input.classList.add("input-error");
-		input.nextElementSiblingling = errorText
-	}
+forms.forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    let labelText = form.querySelectorAll(".label-text");
+    let labelDate = form.querySelectorAll(".label-date");
+    let labelTel = form.querySelectorAll(".label-tel");
+    let radio = form.querySelectorAll(".radio-container");
+    let labelEmail = form.querySelectorAll(".label-email");
+
+    if (labelText) {
+      labelText.forEach((element) => {
+        errorСonditions(element.querySelector("input").value, event, element);
+      });
+    }
+    if (labelDate) {
+      labelDate.forEach((element) => {
+        errorСonditions(element.querySelector("input").value, event, element);
+      });
+    }
+    if (labelTel) {
+      labelTel.forEach((element) => {
+        errorСonditions(element.querySelector("input").value, event, element);
+        errorСonditions(+element.querySelector("input").value, event, element);
+      });
+    }
+    if (labelEmail) {
+      labelEmail.forEach((element) => {
+        errorСonditions(element.querySelector("input").value, event, element);
+        errorСonditions(
+          element.querySelector("input").value.match(/@/),
+          event,
+          element
+        );
+      });
+    }
+    if (radio) {
+      radio.forEach((element) => {
+        let radioActive = false;
+        element.querySelectorAll("input").forEach((currentInput) => {
+          if (currentInput.checked) {
+            radioActive = currentInput.checked;
+          }
+        });
+
+        if (radioActive && element.querySelector(".error-subtitle")) {
+          element.querySelector(".error-subtitle").remove();
+        } else if (!radioActive) {
+          event.preventDefault();
+          if (!element.querySelector(".error-subtitle")) {
+            element.insertAdjacentHTML("beforeend", errorText);
+          }
+        }
+      });
+    }
+  });
+});
+
+// ERROR //
+
+// HEADER CURTAIN //
+
+document.querySelector(".header__menu-button").addEventListener("click", event => {
+  document.querySelector(".header__curtain").classList.toggle("header__curtain-on");
+  document.querySelector(".header").classList.toggle("header-on")
 })
 
-twobtn.addEventListener("click", event => {
-	if (input.nextElementSiblingling) {
-		console.log("123");
-		input.classList.remove("input-error");
-	}
-})
-
-
+// HEADER CURTAIN //
