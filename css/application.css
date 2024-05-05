@@ -175,3 +175,90 @@
 .application__other {
   padding-left: 49px;
 }
+
+@media (max-width: 1030px) {
+  .application__header {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 850px) {
+  .application__header {
+    gap: 35px;
+  }
+
+  .application__fio {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 736px) {
+  .application__header {
+    gap: 0px;
+  }
+
+  .application__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .application__header {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  .application__title {
+    font-size: 24px;
+  }
+
+  .application__form {
+    padding-left: 0;
+  }
+
+  .application__fio {
+    flex-direction: column;
+  }
+
+  .application__chapter {
+    font-size: 10px;
+    padding-left: 22px;
+    left: 5px;
+  }
+
+  .application__contacts  {
+    flex-direction: column;
+  }
+
+  .application__names, .application__date, .application__inf {
+    font-size: 10px;
+    height: 30px;
+  }
+
+  .label-tel, .label-email, .label-text {
+    width: 100%;
+  }
+  
+  .label-tel {
+    order: 1;
+  }
+
+  .label-email {
+    order: 2;
+  }
+
+  .application__radio-span, .application__study-span {
+    font-size: 10px;
+  }
+
+  .application__other  {
+    font-size: 10px;
+    height: 80px;
+  }
+
+  .application__button  {
+    font-size: 14px;
+    width: 100%;
+  }
+}

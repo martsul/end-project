@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+section {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #111;
