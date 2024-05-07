@@ -117,3 +117,11 @@
     font-size: 10px;
   }
 }
+
+.news__container-all {
+  max-height: 100%;
+}
+
+.button-icon-all {
+  transform: rotate(180deg);
+}

@@ -181,7 +181,6 @@
 .university__program {
 	width: 100%;
 	box-shadow: 0px 0px 25px 0px #0000000D;
-	max-height: 80px;
 	border-radius: 20px;
 	padding: 27px;
 	position: relative;
@@ -209,7 +208,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 6px;
-	max-height: 0;
+	max-height: 0px;
 	box-sizing: border-box;
 	overflow: hidden;
 }

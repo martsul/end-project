@@ -222,6 +222,10 @@
   width: 100%;
 }
 
+.universities__card-img {
+  width: 246px;
+}
+
 #left-universities-button {
   transform: translate(-50%, -50%) rotate(180deg);
   position: absolute;
@@ -498,4 +502,8 @@
   top: 29px;
   left: 100%;
   transform: translateX(-50%);
+}
+
+.answer__card-description-all {
+  max-height: 100%;
 }

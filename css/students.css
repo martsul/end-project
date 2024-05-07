@@ -154,3 +154,11 @@
     line-height: 1.4;
   }
 }
+
+.students__container-all {
+  max-height: 100%;
+}
+
+.button-icon-all {
+  transform: rotate(180deg);
+}

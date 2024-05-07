@@ -220,7 +220,7 @@ body {
 .feedback::after {
   content: url("../img/grou.png");
   position: absolute;
-  top: 100%;
+  top: 95%;
   left: 0;
   transform: translateY(-43%);
   display: inline-block;
@@ -274,6 +274,7 @@ body {
   align-items: center;
   gap: 21px;
   position: relative;
+  z-index: 1;
   left: 100%;
   transform: translateX(-100%);
   max-width: 560px;
@@ -282,7 +283,6 @@ body {
   background: #fff;
   box-shadow: 0 0 40px 0 #77CDFF4D;
   padding: 42px 60px 41px;
-  margin-bottom: 40px;
 }
 
 .communication-data::before {
