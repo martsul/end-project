@@ -1004,6 +1004,10 @@ body {
     padding: 21px 18px 41px;
   }
 
+  .communication-data::after {
+    top: -263px;
+  }
+
   .communication-data__title {
     font-size: 18px;
   }
@@ -1016,9 +1020,30 @@ body {
     font-size: 10px;
   }
 
+  .feedback {
+    background-size: auto 100%;
+    background-position: -495px;
+  }
+
   .feedback__button {
     width: 100%;
     font-size: 14px;
+  }
+
+  .qustions {
+    background-size: auto 100%;
+  }
+
+  .qustions::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/qustion-tree.png);
+    display: inline-block;
+    height: 270px;
+    width: 150px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    top: -245px;
   }
 
   .qustions__title {

@@ -63,132 +63,157 @@
 		<section class="universities container" id="universities">
 			<h2 class="universities__title">Университеты</h2>
 			<div class="universities__filters">
-				<h3 class="universities__filters-title">Фильтры</h3>
-				<div class="universities__filters-chapter">
-					<h4 class="universities__cities">Страны</h4>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="city">
-						<span class="subcheckbox">Страна</span>
-					</label>
-				</div>
-				<div class="filters-line"></div>
-				<div class="universities__filters-chapter">
-					<h4 class="universities__shape">Форма обучения</h4>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="shape">
-						<span class="subcheckbox">Бакалавриат</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="shape">
-						<span class="subcheckbox">Магистратура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="shape">
-						<span class="subcheckbox">Докторантура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="shape">
-						<span class="subcheckbox">Подготовка к университету</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="shape">
-						<span class="subcheckbox">Языковые курсы</span>
-					</label>
-				</div>
-				<div class="filters-line"></div>
-				<div class="universities__filters-chapter">
-					<h4 class="universities__turning">Направление обучения</h4>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
-					<label class="universities__filters-item checkbox-team">
-						<input type="checkbox" class="checkbox" name="tirning">
-						<span class="subcheckbox">Архитектура</span>
-					</label>
+				<button type="button" class="universities__filters-btn button">
+					<span>Фильтры</span>
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+						class="button-icon">
+						<path
+							d="M19.2569 -1.90735e-06H0.820313C0.388794 -1.90735e-06 0.0390625 0.34973 0.0390625 0.781248C0.0390625 2.95685 0.97168 5.03387 2.59781 6.47934L6.01929 9.52042C6.61255 10.0478 6.95282 10.8055 6.95282 11.5994V19.2178C6.95282 19.8404 7.64862 20.2136 8.16727 19.8677L12.7765 16.795C12.9938 16.6501 13.1244 16.4063 13.1244 16.145V11.5994C13.1244 10.8055 13.4647 10.0478 14.0579 9.52042L17.4793 6.47934C19.1054 5.03387 20.038 2.95685 20.038 0.781248C20.038 0.34973 19.6883 -1.90735e-06 19.2569 -1.90735e-06ZM16.4412 5.31143L13.0199 8.35266C12.0934 9.17633 11.5619 10.3597 11.5619 11.5993V15.7269L8.51517 17.758V11.5994C8.51517 10.3597 7.98371 9.17633 7.05719 8.35266L3.63587 5.31158C2.53937 4.3367 1.83945 3.00095 1.65207 1.56235H18.425C18.2376 3.00095 17.5378 4.3367 16.4412 5.31143Z" />
+					</svg>
+				</button>
+				<div class="universities__filters-container">
+					<h3 class="universities__filters-title">Фильтры</h3>
+					<div class="universities__filters-chapter">
+						<h4 class="universities__cities">Страны</h4>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="city">
+								<span class="subcheckbox">Страна</span>
+							</label>
+					</div>
+					<div class="filters-line"></div>
+					<div class="universities__filters-chapter">
+						<h4 class="universities__shape">Форма обучения</h4>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="shape">
+								<span class="subcheckbox">Бакалавриат</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="shape">
+								<span class="subcheckbox">Магистратура</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="shape">
+								<span class="subcheckbox">Докторантура</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="shape">
+								<span class="subcheckbox">Подготовка к университету</span>
+							</label>
+							<label class="universities__filters-item checkbox-team">
+								<input type="checkbox" class="checkbox" name="shape">
+								<span class="subcheckbox">Языковые курсы</span>
+							</label>
+					</div>
+					<div class="filters-line"></div>
+					<div class="universities__filters-chapter">
+						<h4 class="universities__turning">Направление обучения</h4>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+						<label class="universities__filters-item checkbox-team">
+							<input type="checkbox" class="checkbox" name="tirning">
+							<span class="subcheckbox">Архитектура</span>
+						</label>
+					</div>
+					<button type="button" class="universities__filters-item-btn button">
+						<span>Применить</span>
+						<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+							class="button-icon">
+							<path d="M13.3796 0L6.08065 8.02787L2.43389 4.58633L0 7.07899L6.27398 13L16 2.30268L13.3796 0Z" />
+						</svg>
+					</button>
 				</div>
 			</div>
 			<div class="universities__example">
 				<div class="universities__search">
-					<div class="universities__search-filed">Поиск</div>
+					<label class="universities__search-filed-container">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+							class="universities__search-filed-img">
+							<path
+								d="M13.9042 12.9798L11.0362 10.1118C11.9006 9.04453 12.421 7.68774 12.421 6.21051C12.421 2.78605 9.63494 0 6.21048 0C2.78602 0 0 2.78605 0 6.21051C0 9.63497 2.78606 12.421 6.21052 12.421C7.68774 12.421 9.04453 11.9006 10.1118 11.0362L12.9798 13.9043C13.1075 14.0319 13.3144 14.0319 13.4421 13.9043L13.9043 13.4421C14.0319 13.3144 14.0319 13.1075 13.9042 12.9798ZM6.21052 11.1135C3.50683 11.1135 1.30748 8.9142 1.30748 6.21051C1.30748 3.50683 3.50683 1.30748 6.21052 1.30748C8.9142 1.30748 11.1135 3.50683 11.1135 6.21051C11.1135 8.9142 8.9142 11.1135 6.21052 11.1135Z"
+								fill="#BED8E8" />
+						</svg>
+						<input type="text" class="universities__search-filed input" placeholder="Поиск">
+					</label>
 					<div class="universities__search-categories">
-						<div class="universities__search-category">
+						<label class="universities__search-category">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
 								class="universities__search-icon">
 								<g clip-path="url(#clip0_47_2393)">
@@ -202,23 +227,26 @@
 								</defs>
 							</svg>
 							<span class="universities__search-name">По популярности</span>
-						</div>
-						<div class="universities__search-category">
+							<input type="radio" class="universities__search-category-radio" name="sorting">
+						</label>
+						<label class="universities__search-category">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
 								class="universities__search-icon">
 								<path
 									d="M16.9997 10.4751C16.9997 11.0474 16.5517 11.5112 15.9989 11.5112C15.4464 11.5112 14.9981 11.0474 14.9981 10.4751V8.53756L10.0149 13.6967C9.82694 13.891 9.57257 14 9.30698 14C9.04166 14 8.78703 13.891 8.59937 13.6967L6.27508 11.2902L4.70869 12.9118C4.31775 13.3166 3.68415 13.3166 3.29321 12.9118C2.90226 12.5071 2.90226 11.8512 3.29321 11.4465L5.56747 9.09231C5.95841 8.68785 6.592 8.68785 6.98295 9.09258L9.30698 11.4988L13.5829 7.07219H11.711C11.1582 7.07219 10.7102 6.60838 10.7102 6.03609C10.7102 5.46381 11.1582 5 11.711 5H15.9992C16.5517 5 17 5.46408 17 6.03609L16.9997 10.4751Z" />
 							</svg>
 							<span class="universities__search-name">По цене</span>
-						</div>
-						<div class="universities__search-category">
+							<input type="radio" class="universities__search-category-radio" name="sorting">
+						</label>
+						<label class="universities__search-category">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
 								class="universities__search-icon arr-down">
 								<path
 									d="M16.9997 10.4751C16.9997 11.0474 16.5517 11.5112 15.9989 11.5112C15.4464 11.5112 14.9981 11.0474 14.9981 10.4751V8.53756L10.0149 13.6967C9.82694 13.891 9.57257 14 9.30698 14C9.04166 14 8.78703 13.891 8.59937 13.6967L6.27508 11.2902L4.70869 12.9118C4.31775 13.3166 3.68415 13.3166 3.29321 12.9118C2.90226 12.5071 2.90226 11.8512 3.29321 11.4465L5.56747 9.09231C5.95841 8.68785 6.592 8.68785 6.98295 9.09258L9.30698 11.4988L13.5829 7.07219H11.711C11.1582 7.07219 10.7102 6.60838 10.7102 6.03609C10.7102 5.46381 11.1582 5 11.711 5H15.9992C16.5517 5 17 5.46408 17 6.03609L16.9997 10.4751Z" />
 							</svg>
 							<span class="universities__search-name">По цене</span>
-						</div>
+							<input type="radio" class="universities__search-category-radio" name="sorting">
+						</label>
 					</div>
 				</div>
 				<div class="universities__card-container curtain-off">

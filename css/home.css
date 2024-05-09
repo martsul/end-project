@@ -4,6 +4,13 @@
   background: transparent;
 }
 
+.header-on-home {
+  margin-bottom: 443px;
+  background: #fff;
+  box-shadow: 0px 0px 25px 0px #0000000D;
+  position: relative;
+}
+
 .preview {
   padding-top: 202px;
   background-image: url("../img/preview-background.jpg");
@@ -18,6 +25,7 @@
   color: #313131;
   max-width: 721px;
   margin-bottom: 25px;
+  margin-left: 34px;
 }
 
 .preview__title-blue {
@@ -30,6 +38,11 @@
   max-width: 677px;
   margin-bottom: 50px;
   position: relative;
+  margin-left: 34px;
+}
+
+.preview__btn {
+  margin-left: 34px;
 }
 
 .preview__subtitle::before {
@@ -46,6 +59,7 @@
   width: 100%;
   position: absolute;
   bottom: 30px;
+  margin-left: 34px;
 }
 
 .preview__location {
@@ -133,17 +147,19 @@
 }
 
 .why__card-containre {
-  display: grid;
-  grid-template-columns: repeat(3, 367px);
+  display: flex;
+  gap: 8px;
   justify-content: space-between;
   width: 100%;
 }
 
 .why__card {
+  background: #fff;
   box-shadow: 0px 0px 25px 0px #0000000D;
   position: relative;
   border-radius: 20px;
   padding: 72px 48px 30px;
+  max-width: 366px;
 }
 
 .why__card-img {
@@ -202,7 +218,7 @@
 }
 
 .universities__link {
-  padding-right: 38px;
+  padding: 15px 38px 0 0;
   font-size: 18px;
   color: #7A7A7A;
   position: relative;
@@ -220,6 +236,7 @@
   display: flex;
   gap: 20px;
   width: 100%;
+  padding-left: 18px;
 }
 
 .universities__card-img {
@@ -227,9 +244,9 @@
 }
 
 #left-universities-button {
-  transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(85%, -50%) rotate(180deg);
   position: absolute;
-  left: 0;
+  right: 100%;
   top: 40%;
 }
 
@@ -258,7 +275,7 @@
   position: absolute;
   left: 100%;
   top: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-85%, -50%);
 }
 
 .reviews {
@@ -297,6 +314,7 @@
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 146px;
+  text-align: center;
 }
 
 .reviews__card-container {
@@ -379,12 +397,12 @@
 .home__examples::after {
   content: "";
   background-image: url("../img/contacts-cloud.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   display: inline-block;
   width: 100%;
-  height: 200px;
+  height: 250px;
   position: absolute;
-  bottom: -10px;
+  bottom: -150px;
 }
 
 .students {
@@ -415,6 +433,7 @@
   font-size: 18px;
   padding-right: 38px;
   position: relative;
+  bottom: 5px;
 }
 
 .students__link::before {
@@ -455,6 +474,7 @@
   font-weight: 700;
   font-size: 36px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .answer__container {
@@ -463,6 +483,7 @@
   flex-wrap: wrap;
   gap: 20px 0;
   justify-content: space-between;
+  align-items: start;
 }
 
 .answer__card {
@@ -471,6 +492,8 @@
   border-radius: 20px;
   padding: 27px 39px 27px 27px;
   position: relative;
+  z-index: 1;
+  margin-right: 24px;
 }
 
 .answer__card::before {
@@ -506,4 +529,219 @@
 
 .answer__card-description-all {
   max-height: 100%;
+  padding-top: 4px;
+}
+
+@media (max-width: 1171px) {
+  .students__link {
+    padding-right: 20px;
+  }
+
+  .answer__card {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .preview {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: right -100px;
+  }
+
+  .preview__title {
+    margin-left: 0;
+  }
+
+  .preview__subtitle {
+    margin-left: 0;
+  }
+
+  .preview__subtitle::before {
+    content: "";
+  }
+
+  .preview__btn {
+    margin-left: 0;
+  }
+
+  .preview__contacts {
+    display: none;
+  }
+
+  .students__title {
+    max-width: 373px;
+    text-align: center;
+  }
+
+  .answer__card {
+    max-width: 388px;
+  }
+}
+
+@media (max-width: 850px) {
+  .home-other {
+    background-size: auto 100%;
+  }
+
+  .why__card-containre {
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+  }
+
+  .reviews {
+    background-size: auto 100%;
+  }
+
+  .answer__card {
+    max-width: 311px;
+  }
+}
+
+@media (max-width: 736px) {
+  .why::before {
+    content: "";
+  }
+
+  .universities__link {
+    display: none;
+  }
+
+  .home__examples {
+    background-size: auto 100%;
+  }
+
+  .students__link {
+    display: none;
+  }
+
+  .answer::before {
+    content: "";
+  }
+
+  .answer__card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .preview {
+    min-height: auto;
+  }
+
+  .preview__title {
+    font-size: 18px;
+  }
+
+  .preview__subtitle {
+    font-size: 12px;
+  }
+
+  .preview__btn {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 170px;
+  }
+
+  .why {
+    margin-bottom: 100px;
+  }
+
+  .why__subtitle {
+    font-size: 12px;
+  }
+
+  .why__title {
+    font-size: 18px;
+  }
+
+  .why__card-img {
+    width: 122.62px;
+  }
+
+  .why__card-discription {
+    font-size: 12px;
+  }
+
+  .universities__title {
+    font-size: 18px;
+  }
+
+  .universities__subtitle {
+    font-size: 12px;
+  }
+
+  #left-universities-button, #rigth-universities-button {
+    display: none;
+  }
+
+  .universities__card {
+    padding-bottom: 10px;
+  }
+
+  .universities__card-city {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .universities__card-num {
+    font-size: 12px;
+  }
+
+  .reviews::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/home-review-tree.png);
+    height: 275px;
+    width: 206px;
+    background-size: 100%;
+    bottom: 0;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+  }
+  
+  .reviews__card {
+    padding-top: 59px;
+  }
+
+  .reviews__card-img-container {
+    width: 96px;
+    height: 96px;
+  }
+
+  .reviews__card-img {
+    width: 100%;
+    left: 7px;
+  }
+
+  .reviews__card-description {
+    width: 229px;
+  }
+
+  .reviews__card-name {
+    font-size: 14px;
+  }
+
+  .reviews__card-review {
+    font-size: 10px;
+  }
+
+  .students__title {
+    font-size: 24px;
+  }
+
+  .answer__title {
+    font-size: 24px;
+  }
+
+  .answer__card-title {
+    font-size: 12px;
+  }
+
+  .answer__card-description {
+    font-size: 10px;
+  }
 }

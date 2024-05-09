@@ -353,6 +353,7 @@
 }
 
 .arrow:disabled {
+  opacity: 0.7;
   background: #EEEFEF;
   cursor: default;
 }

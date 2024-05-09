@@ -210,8 +210,13 @@ forms.forEach((form) => {
 // HEADER CURTAIN //
 
 document.querySelector(".header__menu-button").addEventListener("click", event => {
+  if (document.querySelector("#home")) {
+    document.querySelector(".header").classList.toggle("header-on-home")
+  } else {
+    document.querySelector(".header").classList.toggle("header-on")
+  }
+
   document.querySelector(".header__curtain").classList.toggle("header__curtain-on");
-  document.querySelector(".header").classList.toggle("header-on")
 })
 
 // HEADER CURTAIN //
