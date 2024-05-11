@@ -58,6 +58,10 @@
 	margin-top: 30px;
 }
 
+.universities__filters-item-btn {
+	display: none;
+}
+
 .universities__cities, .universities__shape, .universities__turning {
 	font-weight: 500;
 	padding-left: 30px;
@@ -337,7 +341,7 @@
 		grid-template-columns: 170px 1fr;
 	}
 
-	.universities__filters-chapter:last-child {
+	.universities__filters-chapter:nth-child(6) {
 		max-height: 128px;
 	}
 }
@@ -354,12 +358,16 @@
 
 	.universities__card-container {
 		align-items: center;
-		max-height: 1332px;
+		max-height: 1350px;
 	}
 
 	.universities__card {
 		flex-direction: column;
 		width: calc(100% - 24px);
+	}
+
+	.universities__card-img-container {
+		margin-right: 0;
 	}
 
 	.universities__card-img {
@@ -399,6 +407,12 @@
 	}
 }
 
+@media (max-width: 850px) {
+	.universities__card-container {
+		max-height: 1160px;
+	}
+}
+
 @media (max-width: 736px) {
 	.universities__filters {
 		grid-column: 1 / 3;
@@ -417,18 +431,22 @@
 		align-self: center;
 	}
 
-	
 	.universities__filters-container {
 		max-height: 0;
 		overflow: hidden;
 	}
 
-	.universities__filters-chapter {
+	.universities__filters-chapter, .universities__filters-chapter:nth-child(6) {
 		max-height: 26px;
+	}
+
+	.universities__filters-item-btn {
+		display: inline-block;
 	}
 
 	.universities__example {
 		grid-column: 1 / 3;
+		padding-left: 0;
 	}
 
 	.universities__search-filed {
@@ -437,6 +455,74 @@
 
 	.universities__search-categories {
 		flex-wrap: wrap;
+	}
+
+	.universities__card-container {
+		max-height: 1150px;
+	}
+}
+
+@media (max-width: 520px) {
+	.universities__card-turning {
+		width: max-content;
+	}
+
+	.universities__card-container {
+		max-height: 1045px;
+	}
+}
+
+@media (max-width: 440px) {
+	.universities__title {
+		font-size: 24px;
+	}
+
+	.universities__filters-btn {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.universities__filters-title {
+		font-size: 18px;
+	}
+
+	.universities__filters-item-btn {
+		font-size: 14px;
+	}
+
+	.universities__search-categories {
+		padding: 0 40px;
+	}
+
+	.universities__search-category:first-child {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 11px;
+	}
+
+	.universities__card-container {
+		max-height: 847px;
+	}
+
+	.universities__card-name {
+		font-size: 14px;
+	}
+
+	.universities__card-text {
+		font-size: 10px;
+	}
+
+	.universities__card-city {
+		font-size: 10px;
+	}
+
+	.universities__card-price {
+		font-size: 10px
+	}
+
+	.universities__card-blue {
+		font-size: 14px;
 	}
 }
 
@@ -471,7 +557,7 @@
 }
 
 .universities__filters-container-on::before {
-	content: ""; 
+	content: "";
 	display: inline-block;
 	width: calc(100% - 24px);
 	height: calc(100% - 24px);

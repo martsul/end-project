@@ -983,6 +983,10 @@ body {
 }
 
 @media (max-width: 440px) {
+  .universities {
+    padding-bottom: 103px;
+  }
+
   .container {
     padding-left: calc(50% - 150px);
     padding-right: calc(50% - 150px);
