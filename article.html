@@ -49,17 +49,17 @@
 					24 (Офис 24)
 				</p>
 			</div>
-			</section>
 		</div>
 		<button type="button" class="header__menu-button">
 			<img src="img/menu-open.png" alt="menu" class="header__menu-button-img">
 		</button>
 	</header>
-	<main>
+	<main id="article">
 		<section class="breadcrumbs container">
 			<a href="home.html" class="breadcrumbs__item">Главная</a>
 			<a href="news.html" class="breadcrumbs__item">Новости</a>
-			<a href="article.html" class="breadcrumbs__item">Lorem ipsum dolor sit amet, conse...</a>
+			<a href="article.html" class="breadcrumbs__item">Lorem ipsum dolor<span class="breadcrumbs__item-minus"> sit amet,
+					conse</span>...</a>
 		</section>
 		<section class="article container">
 			<h2 class="article__title">
@@ -156,34 +156,89 @@
 		</section>
 		<section class="same container">
 			<h2 class="same__title">Похожие новости</h2>
-			<div class="same__card">
-				<img src="img/city.jpg" alt="moscow" class="same__img" />
-				<div class="same__text">
-					<h4 class="same__heading">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore
-					</h4>
-					<p class="same__description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-						enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
-						sit amet, consectetur adipiscing elit! Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit...;
-					</p>
-					<p class="same__time time">
-						Время чтения: <em class="time-target">10 минут</em>
-					</p>
-				</div>
+			<div class="same-slider">
 				<button class="same__border-left arrow" disabled>
 					<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
 						<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
 					</svg>
 				</button>
-				<button class="same__border-rigth arrow">
+				<button class="same__border-right arrow">
 					<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
 						<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
 					</svg>
 				</button>
+				<div class="same-slider-container">
+					<div class="same-slider-field">
+						<div class="same__card-container">
+							<a href="article.html" class="same__card">
+								<img src="img/city.jpg" alt="moscow" class="same__img" />
+								<div class="same__text">
+									<h4 class="same__heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore
+									</h4>
+									<p class="same__description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+										enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+										sit amet, consectetur adipiscing elit! Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit...;
+									</p>
+									<p class="same__time time">
+										Время чтения: <em class="time-target">10 минут</em>
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="same__card-container">
+							<a href="article.html" class="same__card">
+								<img src="img/city.jpg" alt="moscow" class="same__img" />
+								<div class="same__text">
+									<h4 class="same__heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore
+									</h4>
+									<p class="same__description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+										enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+										sit amet, consectetur adipiscing elit! Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit...;
+									</p>
+									<p class="same__time time">
+										Время чтения: <em class="time-target">10 минут</em>
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="same__card-container">
+							<a href="article.html" class="same__card">
+								<img src="img/city.jpg" alt="moscow" class="same__img" />
+								<div class="same__text">
+									<h4 class="same__heading">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore
+									</h4>
+									<p class="same__description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+										enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor
+										sit amet, consectetur adipiscing elit! Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit...;
+									</p>
+									<p class="same__time time">
+										Время чтения: <em class="time-target">10 минут</em>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="same__time-block">
+					<div class="same__time-item"></div>
+					<div class="same__time-item"></div>
+					<div class="same__time-item"></div>
+				</div>
 			</div>
 		</section>
 		<section class="feedback container">
@@ -206,10 +261,10 @@
 					</p>
 				</div>
 				<div class="communication-data__inputs">
-					<labet class="communication-data__name label-text">
+					<label class="communication-data__name label-text">
 						<input type="text" name="communication-data-name" class="communication-data__field input"
 							placeholder="Ваше имя" />
-					</labet>
+					</label>
 					<label class="communication-data__number label-tel">
 						<input type="tel" name="communication-data-number" class="communication-data__field input"
 							placeholder="+375 (__)__-__-___" />

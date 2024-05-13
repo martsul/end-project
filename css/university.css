@@ -3,6 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	background: #fff;
+	overflow: hidden;
 }
 
 .university__name {
@@ -208,13 +209,13 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 6px;
-	max-height: 0px;
+	max-height: 0;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
 .university__program-types-full {
-	max-height: 100%;
+	animation: curtain-animation 1s linear forwards;
 	padding-top: 10px;
 }
 
@@ -247,22 +248,63 @@
 	width: 100%;
 }
 
-.university__img {
-	max-width: 850px;
+.university__slider {
+	position: relative;
+	width: 100%;
 }
 
 #left-gallery-button {
 	position: absolute;
-	transform: translate(-50%, -50%) rotate(180deg);
+	z-index: 1;
+	transform: translateY(-50%) rotate(180deg);
 	left: 0;
 	top: 50%;
 }
 
 #right-gallery-button {
 	position: absolute;
+	z-index: 1;
 	transform: translateY(-50%);
 	right: 0;
 	top: 50%;
+}
+
+.university__slider-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.university__slider-field {
+	width: 100%;
+	transition: all ease 0.6s;
+	left: 0;
+	position: relative;
+	display: flex;
+}
+
+.university__slider-card {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.university__img {
+	max-width: 850px;
+}
+
+.university__time-block {
+	padding-left: calc(50% - 33px);
+	margin-top: 20px;
+	display: none;
+	gap: 4px;
+}
+
+.university__time-item {
+	background: #EEF4F9;
+	width: 12px;
+	height: 2.67px;
+	border-radius: 5px;
 }
 
 @media (max-width: 1030px) {
@@ -280,6 +322,10 @@
 
 	.university__img {
 		max-width: 100%;
+	}
+	
+	.university__time-block {
+		display: flex;
 	}
 }
 
@@ -332,12 +378,29 @@
 }
 
 @media (max-width: 520px) {
+	.breadcrumbs {
+		gap: 18px;
+	}
+
+	.breadcrumbs__item:first-child {
+		padding-left: 17px;
+	}
+
+	.breadcrumbs__item {
+		padding-left: 10px;
+	}
+
 	.university__button {
 		left: 95px;
 	}
 }
 
 @media (max-width: 440px) {
+	.breadcrumbs__item:last-child {
+		width: 1000px;
+		flex-shrink: 0;
+	}
+
 	.university__name {
 		font-size: 24px;
 		width: max-content;

@@ -49,7 +49,6 @@
 					24 (Офис 24)
 				</p>
 			</div>
-			</section>
 		</div>
 		<button type="button" class="header__menu-button">
 			<img src="img/menu-open.png" alt="menu" class="header__menu-button-img">
@@ -296,17 +295,44 @@
 			</section>
 			<section class="university__gallery">
 				<h3 class="university__gallery-title">Галерея</h3>
-				<button class="arrow" id="left-gallery-button" disabled>
-					<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-						<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
-					</svg>
-				</button>
-				<img src="img/city-cut.jpg" alt="moscow" class="university__img">
-				<button class="arrow" id="right-gallery-button">
-					<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-						<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
-					</svg>
-				</button>
+				<div class="university__slider">
+					<button class="arrow" id="left-gallery-button" disabled>
+						<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+							<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
+						</svg>
+					</button>
+					<button class="arrow" id="right-gallery-button">
+						<svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+							<path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
+						</svg>
+					</button>
+					<div class="university__slider-container">
+						<div class="university__slider-field">
+							<div class="university__slider-card">
+								<img src="img/city-cut.jpg" alt="moscow" class="university__img">
+							</div>
+							<div class="university__slider-card">
+								<img src="img/city-cut.jpg" alt="moscow" class="university__img">
+							</div>
+							<div class="university__slider-card">
+								<img src="img/city-cut.jpg" alt="moscow" class="university__img">
+							</div>
+							<div class="university__slider-card">
+								<img src="img/city-cut.jpg" alt="moscow" class="university__img">
+							</div>
+							<div class="university__slider-card">
+								<img src="img/city-cut.jpg" alt="moscow" class="university__img">
+							</div>
+						</div>
+					</div>
+					<div class="university__time-block">
+						<div class="university__time-item"></div>
+						<div class="university__time-item"></div>
+						<div class="university__time-item"></div>
+						<div class="university__time-item"></div>
+						<div class="university__time-item"></div>
+					</div>
+				</div>
 			</section>
 		</article>
 		<section class="feedback container">
@@ -329,10 +355,10 @@
 					</p>
 				</div>
 				<div class="communication-data__inputs">
-					<labet class="communication-data__name label-text">
+					<label class="communication-data__name label-text">
 						<input type="text" name="communication-data-name" class="communication-data__field input"
 							placeholder="Ваше имя" />
-					</labet>
+					</label>
 					<label class="communication-data__number label-tel">
 						<input type="tel" name="communication-data-number" class="communication-data__field input"
 							placeholder="+375 (__)__-__-___" />
@@ -358,7 +384,7 @@
 					Свяжитесь с нами и мы ответим на все ваши вопросы
 				</p>
 			</div>
-			<div class="questions__container" id="questions">
+			<div class="questions__container">
 				<div class="questions__inf">
 					<h4 class="questions__category">Телефоны</h4>
 					<div class="questions__group">

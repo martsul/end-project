@@ -32,32 +32,55 @@
 }
 
 .students__img-background {
-  padding: 11px 40px 0 57px;
   background: #52BFFF;
   border-radius: 20px;
   position: relative;
   height: 191px;
+  width: 274px;
+  height: 191px;
 }
 
-.students__img-background::before {
-  content: url("../img/btn-arrow-grey.svg");
-  position: absolute;
-  left: 10px;
+.students__before-btn, .students__next-btn {
   top: 50%;
+}
+
+.students__before-btn {
+  transform: translateY(-50%) rotate(180deg);
+  left: 11px;
+}
+
+.students__next-btn {
+  right: 11px;
   transform: translateY(-50%);
 }
 
-.students__img-background::after {
-  content: url("../img/arrow-arrow.svg");
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+.students__slider-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.students__slider-field {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  transition: all ease 0.8s;
+}
+
+.students__img-container {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  padding-left: calc(50% - 78.5px);
+  position: relative;
 }
 
 .students__img {
-  position: relative;
-  top: 4px;
+  position: absolute;
+  bottom: 0;
 }
 
 .students__text {
@@ -109,9 +132,8 @@
     position: relative;
   }
 
-  .students__img {
-    left: 50%;
-    transform: translate(-50%);
+  .students__img-background {
+    width: 100%;
   }
 
   .students__university {
@@ -156,7 +178,7 @@
 }
 
 .students__container-all {
-  max-height: 100%;
+  animation: curtain-animation 0.8s linear forwards;
 }
 
 .button-icon-all {

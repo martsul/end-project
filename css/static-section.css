@@ -21,6 +21,8 @@ button {
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -834,6 +836,7 @@ body {
 
   .header__menu-button {
     display: inline-block;
+    width: 37px;
   }
 
   .footer {

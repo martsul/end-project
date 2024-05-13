@@ -19,6 +19,24 @@
   position: relative;
 }
 
+.preview__slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.preview__slider-field {
+  width: 100%;
+  display: flex;
+  transition: all ease 1s;
+  position: relative;
+  left: 0;
+}
+
+.preview__card {
+  width: 100%;
+  flex-shrink: 0;
+}
+
 .preview__title {
   font-weight: 700;
   font-size: 44px;
@@ -104,6 +122,21 @@
   left: 0;
 }
 
+.preview__time-block {
+  display: flex;
+  gap: 4px;
+  position: relative;
+  top: 295px;
+  margin-left: calc(50% - 53px);
+}
+
+.preview__time-item {
+  width: 12px;
+  height: 2.67px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
 .home-other {
   background-image: url(../img/home-other-background.jpg);
   background-size: 100% 100%;
@@ -183,6 +216,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.universities::before, .universities::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 102%;
+  width: calc(50% - 575.5px);
+  top: 0;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.universities::before {
+  left: 0;
+}
+
+.universities::after {
+  right: 0;
 }
 
 .universities__header {
@@ -233,28 +286,63 @@
 
 .universities__card-container {
   position: relative;
-  display: flex;
-  gap: 20px;
   width: 100%;
-  padding-left: 18px;
-}
-
-.universities__card-img {
-  width: 246px;
 }
 
 #left-universities-button {
-  transform: translate(85%, -50%) rotate(180deg);
+  transform: rotate(180deg);
   position: absolute;
-  right: 100%;
-  top: 40%;
+  left: 0;
+  top: 31%;
+  z-index: 1;
+}
+
+#right-universities-button {
+  position: absolute;
+  right: 3px;
+  top: 31%;
+  z-index: 1;
+}
+
+.universities__slider-container {
+  width: 288px;
+}
+
+.universities__slider-field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.universities__slider-card {
+  flex-shrink: 0;
 }
 
 .universities__card {
+  display: inline-block;
+  width: 272px;
   padding: 12px 12px 20px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 25px 0px #0000000D;
+}
+
+.universities__slider-card:last-child .universities__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  color: #7A7A7A;
+}
+
+.universities__card-img {
+  width: 100%;
 }
 
 .universities__card-description {
@@ -271,11 +359,18 @@
   color: #D9D9D9;
 }
 
-#rigth-universities-button {
-  position: absolute;
-  left: 100%;
-  top: 40%;
-  transform: translate(-85%, -50%);
+.universities__time-block {
+  padding-left: calc(50% - 54px);
+  margin-top: 20px;
+  display: none;
+  gap: 4px;
+}
+
+.universities__time-item {
+  background: #EEF4F9;
+  width: 12px;
+  height: 2.67px;
+  border-radius: 5px;
 }
 
 .reviews {
@@ -313,18 +408,58 @@
   color: #52BFFF;
   font-weight: 700;
   font-size: 36px;
-  margin-bottom: 146px;
+  margin-bottom: 46px;
   text-align: center;
 }
 
 .reviews__card-container {
-  display: flex;
-  gap: 20px;
   position: relative;
   width: 100%;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#left-reviews-button, #right-reviews-button {
+  position: absolute;
+  z-index: 2;
+  top: 58%;
+}
+
+#left-reviews-button {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+#right-reviews-button {
+  right: 0;
+}
+
+.reviews__slider-container {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.reviews__slider-field-max {
+  width: 390px;
+}
+
+.reviews__slider-field {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 
 .reviews__card {
+  flex-shrink: 0;
+  width: 370px;
   padding: 121px 27px 20px;
   background: #fff;
   box-shadow: 0px 0px 25px 0px #0000000D;
@@ -371,10 +506,6 @@
   background: linear-gradient(213.88deg, #B1E2FF -67.78%, #68C7FF 175.48%);
 }
 
-.reviews__card-description {
-  width: 313px;
-}
-
 .reviews__card-name {
   color: #7a7a7a;
   font-size: 18px;
@@ -385,6 +516,23 @@
 
 .reviews__card-review {
   color: #7A7A7A;
+}
+
+.reviews__time-block {
+  align-self: start;
+  padding-left: calc(50% - 41px);
+  margin-top: 20px;
+  display: none;
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.reviews__time-item {
+  background: #EEF4F9;
+  width: 12px;
+  height: 2.67px;
+  border-radius: 5px;
 }
 
 .home__examples {
@@ -533,6 +681,30 @@
 }
 
 @media (max-width: 1171px) {
+  .universities::before, .universities::after {
+    width: calc(50% - 505px);
+  }
+
+  .universities__slider-container {
+    width: 340px;
+  }
+
+  .universities__card {
+    width: 323px;
+  }
+
+  .reviews__card-container {
+    height: 403px;
+  }
+
+  .reviews__slider-field-max {
+    width: 343px;
+  }
+
+  .reviews__card {
+    width: 323px;
+  }
+
   .students__link {
     padding-right: 20px;
   }
@@ -569,6 +741,50 @@
     display: none;
   }
 
+  .universities::before, .universities::after {
+    width: calc(50% - 415px);
+  }
+
+  #left-universities-button, #right-universities-button {
+    display: none;
+  }
+
+  .universities__slider-container {
+    width: 280px;
+  }
+
+  .universities__card {
+    width: 262px;
+  }
+
+  .universities__time-block {
+    display: flex;
+  }
+
+  .reviews__card-container {
+    height: 367px;
+  }
+
+  #left-reviews-button, #right-reviews-button {
+    display: none;
+  }
+
+  .reviews__time-block {
+    display: flex;
+  }
+
+  .reviews__slider-field-max {
+    width: 425px;
+  }
+
+  .reviews__card {
+    width: 405px;
+  }
+
+  .reviews__time-block {
+    display: flex;
+  }
+
   .students__title {
     max-width: 373px;
     text-align: center;
@@ -580,6 +796,10 @@
 }
 
 @media (max-width: 850px) {
+  .preview__time-block {
+    top: 240px;
+  }
+
   .home-other {
     background-size: auto 100%;
   }
@@ -588,6 +808,30 @@
     flex-direction: column;
     align-items: center;
     gap: 75px;
+  }
+
+  .universities::before, .universities::after {
+    width: calc(50% - 340px);
+  }
+
+  .universities__slider-container {
+    width: 346px;
+  }
+
+  .universities__card {
+    width: 328px;
+  }
+
+  .reviews__card-container {
+    height: 402px;
+  }
+
+  .reviews__slider-field-max {
+    width: 349px;
+  }
+
+  .reviews__card {
+    width: 329px;
   }
 
   .reviews {
@@ -600,12 +844,40 @@
 }
 
 @media (max-width: 736px) {
+  .preview__time-block {
+    top: 210px;
+  }
+
   .why::before {
     content: "";
   }
 
   .universities__link {
     display: none;
+  }
+
+  .universities::before, .universities::after {
+    width: calc(50% - 250px);
+  }
+
+  .universities__slider-container {
+    width: 520px;
+  }
+
+  .universities__card {
+    width: 500px;
+  }
+
+  .reviews__card-container {
+    height: 348px;
+  }
+
+  .reviews__slider-field-max {
+    width: 520px;
+  }
+
+  .reviews__card {
+    width: 500px;
   }
 
   .home__examples {
@@ -622,6 +894,36 @@
 
   .answer__card {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .preview__time-block {
+    top: 85px;
+  }
+
+  .universities::before, .universities::after {
+    width: calc(50% - 210px);
+  }
+
+  .universities__slider-container {
+    width: 440px;
+  }
+
+  .universities__card {
+    width: 420px;
+  }
+
+  .reviews__card-container {
+    height: 367px;
+  }
+
+  .reviews__slider-field-max {
+    width: 4400px;
+  }
+
+  .reviews__card {
+    width: 420px;
   }
 }
 
@@ -642,6 +944,10 @@
     font-size: 14px;
     width: 100%;
     margin-bottom: 170px;
+  }
+
+  .preview__time-block {
+    top: -65px;
   }
 
   .why {
@@ -672,11 +978,16 @@
     font-size: 12px;
   }
 
-  #left-universities-button, #rigth-universities-button {
-    display: none;
+  .universities::before, .universities::after {
+    width: calc(50% - 150px);
+  }
+
+  .universities__slider-container {
+    width: 320px;
   }
 
   .universities__card {
+    width: 300px;
     padding-bottom: 10px;
   }
 
@@ -702,10 +1013,20 @@
   .reviews__title {
     font-size: 24px;
   }
-  
+
+  .reviews__card-container {
+    height: 230px;
+  }
+
+  .reviews__slider-field-max {
+    width: 320px;
+  }
+
   .reviews__card {
+    width: 300px;
     padding-top: 59px;
   }
+
 
   .reviews__card-img-container {
     width: 96px;
