@@ -126,6 +126,10 @@ body {
   display: none;
 }
 
+.header__menu-button-img {
+  width: 40px;
+}
+
 .header__curtain-contacts {
   display: flex;
   flex-direction: column;
@@ -836,7 +840,6 @@ body {
 
   .header__menu-button {
     display: inline-block;
-    width: 37px;
   }
 
   .footer {

@@ -1,4 +1,4 @@
-.breadcrumbs {
+.breadcrumbs__item {
   position: relative;
   z-index: 1;
 }
@@ -23,19 +23,6 @@
   align-items: center;
   padding-bottom: 160px;
   width: 100%;
-}
-
-.contacts__content::before {
-  content: "";
-  display: inline-block;
-  height: 400px;
-  width: 100%;
-  background: no-repeat url("../img/contacts-cloud.png");
-  background-size: 100% 100%;
-  position: absolute;
-  z-index: -1;
-  transform: translateY(50%);
-  bottom: 100%;
 }
 
 .contacts__content::after {
@@ -237,7 +224,7 @@
   .contacts__addresses {
     left: 0;
   }
-  
+
   .contacts__inf {
     top: 0;
     margin-bottom: 178px;
@@ -257,11 +244,11 @@
   .contacts__city {
     font-size: 12px;
   }
-  
+
   .contacts__street {
     font-size: 10px;
   }
-  
+
   .contacts__inf {
     padding-bottom: 30px;
   }

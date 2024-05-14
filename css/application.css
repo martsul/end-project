@@ -228,7 +228,7 @@
     left: 5px;
   }
 
-  .application__contacts  {
+  .application__contacts {
     flex-direction: column;
   }
 
@@ -240,7 +240,7 @@
   .label-tel, .label-email, .label-text {
     width: 100%;
   }
-  
+
   .label-tel {
     order: 1;
   }
@@ -253,12 +253,12 @@
     font-size: 10px;
   }
 
-  .application__other  {
+  .application__other {
     font-size: 10px;
     height: 80px;
   }
 
-  .application__button  {
+  .application__button {
     font-size: 14px;
     width: 100%;
   }

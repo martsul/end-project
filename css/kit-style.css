@@ -173,21 +173,9 @@
   color: #313131;
 }
 
-/*
-  .input ACCEPTED {
-
-  }
-
-  .input ERROR {
-
-  }
-*/
-
 .input:disabled:hover {
   border: 2px solid #F8FCFF;
 }
-
-/* SELECT */
 
 .button {
   width: 237px;
@@ -279,8 +267,6 @@
   padding: 11px;
 }
 
-/* RANGE */
-
 .arrow {
   background: linear-gradient(180deg, #BEE7FF 0%, #52BFFF 100%);
   border: 0;
@@ -366,8 +352,6 @@
   background: #D9D9D9;
 }
 
-/* MINI ARR BTN */
-
 .mini-arr {
   background: transparent;
   position: absolute;
@@ -388,8 +372,6 @@
   right: 11px;
   transform: translateY(-50%);
 }
-
-/* ANIMATIONS CURTAINS*/
 
 .curtain-all {
   animation: curtain-animation 0.4s linear forwards;

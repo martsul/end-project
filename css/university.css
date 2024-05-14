@@ -323,7 +323,7 @@
 	.university__img {
 		max-width: 100%;
 	}
-	
+
 	.university__time-block {
 		display: flex;
 	}
@@ -366,7 +366,7 @@
 	.university__characteristic {
 		justify-content: start;
 	}
-	
+
 	.university__specifications {
 		top: -31px;
 		background: #fff;
@@ -413,7 +413,7 @@
 	.university__option {
 		font-size: 10px;
 	}
-	
+
 	.university__meaning {
 		font-size: 12px;
 	}

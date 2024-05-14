@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная – Callan Consulting Centre</title>
+  <link rel="shortcut icon" href="img/favicon-alt-1-150x150.webp">
   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="css/kit-style.css" type="text/css" />
   <link rel="stylesheet" href="css/static-section.css" type="text/css" />
@@ -49,7 +51,6 @@
           24 (Офис 24)
         </p>
       </div>
-      </section>
     </div>
     <button type="button" class="header__menu-button">
       <img src="img/menu-open.png" alt="menu" class="header__menu-button-img">
@@ -259,7 +260,7 @@
               </div>
               <div class="universities__slider-card">
                 <a href="universities.html" class="universities__card">
-                  <p>Сотреть все</p>
+                  <p>Смотреть все</p>
                   <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L7 7L2 12" stroke="#B1E2FF" stroke-width="3" stroke-linecap="round" />
                   </svg>
@@ -393,17 +394,53 @@
           <a href="students.html" class="students__link">Истории студентов</a>
         </div>
         <div class="students__card-container">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
-          <button class="arrow" id="rigth-students-button">
+          <button class="arrow" id="left-students-button" disabled>
             <svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
               <path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
             </svg>
           </button>
+          <button class="arrow" id="right-students-button">
+            <svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+              <path d="M2 2L7 7L2 12" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="students__slider-container">
+            <div class="students__slider-field">
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <div class="students__slider-card">
+                <img src="img/student-woman.jpg" alt="student-woman" class="students__card-img">
+              </div>
+              <a href="students.html" class="students__slider-card">
+                <p class="students__slider-card-text">Истории студентов</p>
+                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L7 7L2 12" stroke="#B1E2FF" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="students__time-block">
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+            <div class="students__time-item"></div>
+          </div>
         </div>
       </section>
       <section class="answer container">
@@ -496,10 +533,10 @@
           </p>
         </div>
         <div class="communication-data__inputs">
-          <labet class="communication-data__name label-text">
+          <label class="communication-data__name label-text">
             <input type="text" name="communication-data-name" class="communication-data__field input"
               placeholder="Ваше имя" />
-          </labet>
+          </label>
           <label class="communication-data__number label-tel">
             <input type="tel" name="communication-data-number" class="communication-data__field input"
               placeholder="+375 (__)__-__-___" />

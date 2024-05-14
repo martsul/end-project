@@ -210,7 +210,7 @@
 .universities__card-img-next {
 	top: 50%;
 	right: 5px;
-	transform: translateY(-50%) ;
+	transform: translateY(-50%);
 }
 
 .universities__slider-container {
@@ -358,7 +358,7 @@
 }
 
 .button-icon-all {
-  transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 @media (max-width: 1171px) {
@@ -383,7 +383,7 @@
 
 	.universities__card-container {
 		align-items: center;
-		max-height: 1350px;
+		max-height: 1380px;
 	}
 
 	.universities__card {
@@ -430,7 +430,7 @@
 	}
 
 	.universities__card-price {
-		padding: 15px 0 0 0;
+		padding: 15px 0 15px 0;
 		width: 140px;
 		border-top: 1px solid #E2EDF380;
 	}
@@ -438,7 +438,7 @@
 
 @media (max-width: 850px) {
 	.universities__card-container {
-		max-height: 1160px;
+		max-height: 1190px;
 	}
 }
 
@@ -487,7 +487,7 @@
 	}
 
 	.universities__card-container {
-		max-height: 1175px;
+		max-height: 1200px;
 	}
 }
 
@@ -497,7 +497,7 @@
 	}
 
 	.universities__card-container {
-		max-height: 1065px;
+		max-height: 1095px;
 	}
 }
 
@@ -531,7 +531,7 @@
 	}
 
 	.universities__card-container {
-		max-height: 847px;
+		max-height: 870px;
 	}
 
 	.universities__nothing {

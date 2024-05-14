@@ -110,8 +110,6 @@ let swiper = (
   }
 };
 
-// SWIPER //
-
 // // POP-UP //
 
 document
@@ -127,8 +125,6 @@ document.querySelector(".pop-up__close").addEventListener("click", (event) => {
   document.querySelector(".pop-up").setAttribute("class", "pop-up");
   document.body.removeAttribute("class");
 });
-
-// // POP-UP //
 
 // // UNIVERSITIES //
 
@@ -397,8 +393,6 @@ if (document.querySelector("#news")) {
   });
 }
 
-// NEWS //
-
 // STUDENTS //
 
 if (document.querySelector("#students")) {
@@ -435,9 +429,7 @@ if (document.querySelector("#students")) {
   });
 }
 
-// STUDENTS //
-
-// ERROR //
+// VALIDATION FORM ERROR //
 
 let errorText =
   '<div class="error-subtitle"><img src="img/error-icon.svg" alt="error"><p class="error-text">Reason of the error</p></div>';
@@ -680,8 +672,6 @@ forms.forEach((form) => {
   });
 });
 
-// ERROR //
-
 // HEADER CURTAIN //
 
 let open =
@@ -709,8 +699,6 @@ document
       .classList.toggle("header__curtain-on");
   });
 
-// HEADER CURTAIN //
-
 // APPLICATION //
 
 document
@@ -718,8 +706,6 @@ document
   .addEventListener("click", (event) => {
     document.location = "application.html";
   });
-
-// APPLICATION //
 
 // HOME //
 
@@ -760,6 +746,18 @@ if (document.querySelector("#home")) {
     true
   );
 
+  swiper(
+    document.querySelector("#left-students-button"),
+    document.querySelector("#right-students-button"),
+    document.querySelectorAll(".students__slider-card"),
+    document.querySelectorAll(".students__time-item"),
+    document.querySelector(".students__slider-field"),
+    true,
+    document.querySelectorAll(".students__card-container"),
+    1030,
+    true
+  );
+
   document.querySelectorAll(".preview__btn").forEach((element) => {
     element.addEventListener("click", (event) => {
       document.location = "#questions";
@@ -767,6 +765,10 @@ if (document.querySelector("#home")) {
   });
 
   let answerCard = document.querySelectorAll(".answer__card");
+  let minus =
+    '<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon"><path d="M2 2H12"stroke-width="3"stroke-linecap="round" /></svg>';
+  let plus =
+    '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon"> <path d="M8 3V13M3 8H13" stroke-width="3" stroke-linecap="round"></path> </svg>';
 
   answerCard.forEach((element) => {
     element
@@ -775,11 +777,14 @@ if (document.querySelector("#home")) {
         element
           .querySelector(".answer__card-description")
           .classList.toggle("answer__card-description-all");
+        if (element.querySelector(".answer__btn-more").innerHTML === minus) {
+          element.querySelector(".answer__btn-more").innerHTML = plus;
+        } else {
+          element.querySelector(".answer__btn-more").innerHTML = minus;
+        }
       });
   });
 }
-
-// HOME_FEEDBACK //
 
 // ARTICLE //
 
@@ -791,10 +796,8 @@ if (document.querySelector("#article")) {
     document.querySelectorAll(".same__time-item"),
     document.querySelector(".same-slider-field"),
     true,
-    document.querySelectorAll(".same__card"),
+    document.querySelectorAll(".same-slider-container"),
     1030,
     true
   );
 }
-
-// ARTICLE //
